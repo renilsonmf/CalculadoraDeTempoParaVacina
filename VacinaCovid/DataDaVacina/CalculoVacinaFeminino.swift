@@ -9,7 +9,7 @@ import UIKit
 
 class CalculoVacinaFeminino: DataDaVacina {
     
-    func calculaDataDaVacina(idade: Int) -> String {
+    func calculaDataDaVacina(idade: Int, contaminado: Bool) -> String {
         
         var tempoParaVacina: String = ""
         if (idade > 70){

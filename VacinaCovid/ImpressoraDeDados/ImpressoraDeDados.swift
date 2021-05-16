@@ -12,9 +12,10 @@ class ImpressoraDeDados {
      func imprimir(){
          let listaDePacientes = [
             Feminino(nome: "Larissa", idade: 21, contaminado: false, gravida: true),
-            Masculino(nome: "Renilson", idade: 70, contaminado: false),
-            Feminino(nome: "Maria", idade: 78, contaminado: true, gravida: false),
-            Masculino(nome: "Marcos", idade: 55, contaminado: false)
+            Masculino(nome: "Renilson", idade: 71, contaminado: true),
+            Masculino(nome: "Marcosss", idade: 72, contaminado: false),
+            Masculino(nome: "Gustavo", idade: 22, contaminado: true),
+            Feminino(nome: "Maria", idade: 78, contaminado: true, gravida: false)
              ]
              
          for i in 0...listaDePacientes.count-1{

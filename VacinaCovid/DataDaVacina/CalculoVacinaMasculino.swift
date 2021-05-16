@@ -8,11 +8,17 @@
 import UIKit
 
 class CalculoVacinaMasculino: DataDaVacina {
-    func calculaDataDaVacina(idade: Int) -> String {
+    func calculaDataDaVacina(idade: Int, contaminado: Bool) -> String {
         
         var tempoParaVacina: String = ""
+        let contaminado: Bool = contaminado
+        
         if (idade > 70){
-            tempoParaVacina = "Imediato"
+            if(contaminado == true){
+                tempoParaVacina = "imediato + 30 dias"
+            }else{
+                tempoParaVacina = "imediato"
+            }
         }
         
         else if (idade > 60 && idade <= 70){
@@ -28,7 +34,11 @@ class CalculoVacinaMasculino: DataDaVacina {
         }
         
         else if (idade > 20 && idade <= 30){
-            tempoParaVacina = "A partir de 120 dias"
+            if(contaminado == true){
+                tempoParaVacina = "120 + 30 dias"
+            }else{
+                tempoParaVacina = "A partir de 120 dias"
+            }
         }
         
         else if (idade >= 0 && idade <= 20){
