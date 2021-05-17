@@ -9,22 +9,18 @@ import UIKit
 
 class Feminino: Paciente{
 
-  
-//    
-//    func verificaSeTaGravida(dataVacina: CalculoVacinaFeminino, gravida: Bool) -> String{
-//        var tempoVacina = ""
-//        if gravida == true {
-//            tempoVacina = "Imediata - Esta gravida"
-//        }else{
-//            tempoVacina = "testeeeee"
-//        }
-//        return tempoVacina
-//    }
-        
+    var gravida: Bool = false
+    
     init(nome: String, idade: Int, contaminado: Bool, gravida: Bool) {
+        
+        self.gravida = gravida
+        
         super.init(nome: nome, idade: idade, contaminado: contaminado, sexo: 2, dataDaVacina: CalculoVacinaFeminino())
+       
+    }
+    override func imprimir() {
+        print("Gravida: \(gravida)")
+        super.imprimir()
     }
 
-
-    
 }

@@ -9,10 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let impressora = ImpressoraDeDados()
+    var listaPaciente: [Paciente] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let pacientes: ImpressoraDeDados = ImpressoraDeDados()
-        pacientes.imprimir()
+        
+         listaPaciente = impressora.cadastrarPacientes()
+         todosOsPacientes()
+    }
+    
+    func todosOsPacientes(){
+        for i in listaPaciente{
+            i.imprimir()
+        }
     }
 
 

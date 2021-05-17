@@ -23,9 +23,12 @@ class Paciente{
     }
     
     func calculaDataVacina() -> String{
-        return dataDaVacina.calculaDataDaVacina(idade: idade, contaminado: contaminado)
+        return dataDaVacina.calculaDataDaVacina(paciente: self)
     }
-
     
+    func imprimir(){
+        let impressoraDeDados = ImpressoraDeDados()
+        impressoraDeDados.imprimir(paciente: self)
+    }
 }
 

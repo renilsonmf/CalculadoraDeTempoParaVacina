@@ -9,6 +9,6 @@ import Foundation
 
 protocol DataDaVacina {
     
-    func calculaDataDaVacina(idade: Int, contaminado: Bool) -> String
+    func calculaDataDaVacina(paciente: Paciente) -> String
     
 }
