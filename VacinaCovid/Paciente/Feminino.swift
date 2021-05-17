@@ -15,7 +15,7 @@ class Feminino: Paciente{
     init(nome: String, contaminado: Bool, gravida: Bool, dataNascimento: String) {
         self.gravida = gravida
         
-        super.init(nome: nome, dataNascimento: dataNascimento, contaminado: contaminado, sexo: 1, dataDaVacina: CalculoVacinaFeminino())
+        super.init(nome: nome, dataNascimento: dataNascimento, contaminado: contaminado, dataDaVacina: CalculoVacinaFeminino())
     }
 
     override func imprimir() {

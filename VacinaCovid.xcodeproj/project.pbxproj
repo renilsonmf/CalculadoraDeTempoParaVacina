@@ -17,7 +17,6 @@
 		1C72E5CD264F359E009E73B4 /* VacinaCovidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5CC264F359E009E73B4 /* VacinaCovidTests.swift */; };
 		1C72E5D8264F359E009E73B4 /* VacinaCovidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5D7264F359E009E73B4 /* VacinaCovidUITests.swift */; };
 		1C72E5EE264F3D07009E73B4 /* Paciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5ED264F3D07009E73B4 /* Paciente.swift */; };
-		1C72E5F4264F3D4B009E73B4 /* DataDaVacina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */; };
 		1C72E5FA264F3E2C009E73B4 /* Feminino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5F9264F3E2C009E73B4 /* Feminino.swift */; };
 		1C72E602264F3E9A009E73B4 /* Masculino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E601264F3E9A009E73B4 /* Masculino.swift */; };
 		1C72E60F264F3F56009E73B4 /* CalculoVacina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E60E264F3F56009E73B4 /* CalculoVacina.swift */; };
@@ -60,7 +59,6 @@
 		1C72E5D9264F359E009E73B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C72E5E8264F3643009E73B4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1C72E5ED264F3D07009E73B4 /* Paciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paciente.swift; sourceTree = "<group>"; };
-		1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDaVacina.swift; sourceTree = "<group>"; };
 		1C72E5F9264F3E2C009E73B4 /* Feminino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feminino.swift; sourceTree = "<group>"; };
 		1C72E601264F3E9A009E73B4 /* Masculino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masculino.swift; sourceTree = "<group>"; };
 		1C72E60E264F3F56009E73B4 /* CalculoVacina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoVacina.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 		1C72E5B1264F3599009E73B4 /* VacinaCovid */ = {
 			isa = PBXGroup;
 			children = (
-				1C72E5F2264F3D2F009E73B4 /* Regras */,
 				1C72E5EC264F3CD7009E73B4 /* Paciente */,
 				1C72E5F8264F3DCF009E73B4 /* DataDaVacina */,
 				1C72E61B264F58C6009E73B4 /* ImpressoraDeDados */,
@@ -159,14 +156,6 @@
 				1C72E601264F3E9A009E73B4 /* Masculino.swift */,
 			);
 			path = Paciente;
-			sourceTree = "<group>";
-		};
-		1C72E5F2264F3D2F009E73B4 /* Regras */ = {
-			isa = PBXGroup;
-			children = (
-				1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */,
-			);
-			path = Regras;
 			sourceTree = "<group>";
 		};
 		1C72E5F8264F3DCF009E73B4 /* DataDaVacina */ = {
@@ -318,7 +307,6 @@
 			files = (
 				1C72E617264F5288009E73B4 /* CalculoVacinaFeminino.swift in Sources */,
 				1C72E5EE264F3D07009E73B4 /* Paciente.swift in Sources */,
-				1C72E5F4264F3D4B009E73B4 /* DataDaVacina.swift in Sources */,
 				1C72E61D264F58EF009E73B4 /* ImpressoraDeDados.swift in Sources */,
 				1C72E5B7264F3599009E73B4 /* ViewController.swift in Sources */,
 				1C72E5B3264F3599009E73B4 /* AppDelegate.swift in Sources */,

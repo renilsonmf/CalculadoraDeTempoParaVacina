@@ -11,7 +11,7 @@ class CalculoVacina {
     func calculaDataDaVacina(paciente: Paciente) -> String {
         
         var tempoParaVacina: String = ""
-        let idade = paciente.idade
+        let idade = ImpressoraDeDados().getIdade(dataNascimento: paciente.dataNascimento)
         let contaminado: Bool = paciente.contaminado
         
         // Maior que 70 anos imediato, independente se  contaminado ou não

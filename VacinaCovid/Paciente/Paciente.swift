@@ -9,18 +9,15 @@ import UIKit
 
 class Paciente{
     var nome: String
-    var idade: Int = 0
+    var dataNascimento: String
     var contaminado: Bool
-    var sexo: Int
     var dataDaVacina: CalculoVacina
  
     
-    init(nome: String, dataNascimento: String, contaminado: Bool, sexo: Int, dataDaVacina: CalculoVacina = CalculoVacina()) {
-        let idade = ImpressoraDeDados().getIdade(dataNascimento: dataNascimento)
+    init(nome: String, dataNascimento: String, contaminado: Bool, dataDaVacina: CalculoVacina = CalculoVacina()) {
+        self.dataNascimento = dataNascimento
         self.nome = nome
-        self.idade = idade
         self.contaminado = contaminado
-        self.sexo = sexo
         self.dataDaVacina = dataDaVacina
     }
     

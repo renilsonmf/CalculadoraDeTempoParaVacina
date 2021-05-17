@@ -9,6 +9,7 @@ import Foundation
 
 class ImpressoraDeDados {
     
+    //Converte Data
     func getIdade(dataNascimento: String) -> Int {
           let nascimento = formatDate(dataNascimento)
           let calendario = Calendar.current
@@ -42,7 +43,7 @@ class ImpressoraDeDados {
     func imprimir(paciente: Paciente){
            print("----------------------------------------------------------")
            print("Nome: \(paciente.nome)")
-           print("Idade: \(paciente.idade)")
+           print("Idade: \(getIdade(dataNascimento: paciente.dataNascimento))")
            print("Sexo: \(type(of: paciente))") // Imprime o nome da classe
            print("Contaminado: \(paciente.contaminado == true ? "Sim" : "não")") //if ternario
            print("Tempo Vacina: \(paciente.calculaDataVacina())")

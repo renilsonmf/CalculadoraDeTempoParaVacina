@@ -11,7 +11,7 @@ class Masculino: Paciente {
 
     init(nome: String, dataNascimento: String, contaminado: Bool) {
 
-        super.init(nome: nome, dataNascimento: dataNascimento, contaminado: contaminado, sexo: 2, dataDaVacina: CalculoVacina())
+        super.init(nome: nome, dataNascimento: dataNascimento, contaminado: contaminado, dataDaVacina: CalculoVacina())
         }
     }
 
