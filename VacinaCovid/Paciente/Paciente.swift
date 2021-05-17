@@ -25,6 +25,7 @@ class Paciente{
     func calculaDataVacina() -> String{
         return dataDaVacina.calculaDataDaVacina(idade: idade, contaminado: contaminado)
     }
+
     
 }
 
