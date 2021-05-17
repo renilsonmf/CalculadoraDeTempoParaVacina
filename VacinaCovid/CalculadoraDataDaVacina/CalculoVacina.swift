@@ -16,7 +16,7 @@ class CalculoVacina {
         
         // Maior que 70 anos imediato, independente se  contaminado ou não
         if (idade > 70){
-            tempoParaVacina = "imediato"
+            tempoParaVacina = "Vacina imediata"
         }
         
         // De 61 até 70 anos
@@ -33,7 +33,7 @@ class CalculoVacina {
         // De 51 até 60 anos
         else if (idade > 50 && idade <= 60){
             if(contaminado == true){
-                tempoParaVacina = "A partir de 90 dias, pois já foi contaminado "
+                tempoParaVacina = "A partir de 90 dias, pois já foi contaminado"
             }else{
                 tempoParaVacina = "A partir de 60 dias"
             }

@@ -115,11 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				1C72E5EC264F3CD7009E73B4 /* Paciente */,
-				1C72E5F8264F3DCF009E73B4 /* DataDaVacina */,
+				1C72E5F8264F3DCF009E73B4 /* CalculadoraDataDaVacina */,
 				1C72E61B264F58C6009E73B4 /* ImpressoraDeDados */,
 				1C72E5B2264F3599009E73B4 /* AppDelegate.swift */,
 				1C72E5B4264F3599009E73B4 /* SceneDelegate.swift */,
-				1C72E5B6264F3599009E73B4 /* ViewController.swift */,
 				1C72E5B8264F3599009E73B4 /* Main.storyboard */,
 				1C72E5BE264F359E009E73B4 /* Assets.xcassets */,
 				1C72E5C0264F359E009E73B4 /* LaunchScreen.storyboard */,
@@ -158,19 +157,20 @@
 			path = Paciente;
 			sourceTree = "<group>";
 		};
-		1C72E5F8264F3DCF009E73B4 /* DataDaVacina */ = {
+		1C72E5F8264F3DCF009E73B4 /* CalculadoraDataDaVacina */ = {
 			isa = PBXGroup;
 			children = (
 				1C72E60E264F3F56009E73B4 /* CalculoVacina.swift */,
 				1C72E616264F5288009E73B4 /* CalculoVacinaFeminino.swift */,
 			);
-			path = DataDaVacina;
+			path = CalculadoraDataDaVacina;
 			sourceTree = "<group>";
 		};
 		1C72E61B264F58C6009E73B4 /* ImpressoraDeDados */ = {
 			isa = PBXGroup;
 			children = (
 				1C72E61C264F58EF009E73B4 /* ImpressoraDeDados.swift */,
+				1C72E5B6264F3599009E73B4 /* ViewController.swift */,
 			);
 			path = ImpressoraDeDados;
 			sourceTree = "<group>";

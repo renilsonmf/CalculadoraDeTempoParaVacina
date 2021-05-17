@@ -15,13 +15,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         listaPaciente = impressora.cadastrarPacientes()
+         listaPaciente = impressora.cadastrarPacientes() // Cadastra os pacientes
+        
          todosOsPacientes()
     }
     
     func todosOsPacientes(){
         for i in listaPaciente{
-            i.imprimir()
+            i.imprimirPaciente()
         }
     }
 

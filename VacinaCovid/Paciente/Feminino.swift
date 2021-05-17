@@ -18,9 +18,9 @@ class Feminino: Paciente{
         super.init(nome: nome, dataNascimento: dataNascimento, contaminado: contaminado, dataDaVacina: CalculoVacinaFeminino())
     }
 
-    override func imprimir() {
-        super.imprimir()
-        print("Gravida: \(gravida)")
+    override func imprimirPaciente() {
+        super.imprimirPaciente()
+        print("Gravida: \(gravida == true ? "Sim" : "Não")")
     }
 
 }

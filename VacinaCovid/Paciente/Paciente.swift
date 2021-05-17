@@ -25,7 +25,7 @@ class Paciente{
         return dataDaVacina.calculaDataDaVacina(paciente: self)
     }
     
-    func imprimir(){
+    func imprimirPaciente(){
         let impressoraDeDados = ImpressoraDeDados()
         impressoraDeDados.imprimir(paciente: self)
     }

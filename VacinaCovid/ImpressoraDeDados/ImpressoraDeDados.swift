@@ -34,8 +34,10 @@ class ImpressoraDeDados {
         listaDePacientes = [
             Feminino(nome: "Maria", contaminado: true, gravida: true, dataNascimento: "31/12/1997"),
             Feminino(nome: "Aline", contaminado: false, gravida: false, dataNascimento: "31/12/2000"),
-            Masculino(nome: "Renilson", dataNascimento: "31/12/2000", contaminado: true),
-            Masculino(nome: "Jonh", dataNascimento: "20/10/2005", contaminado: false)
+            Masculino(nome: "Renilson", contaminado: true, dataNascimento: "31/12/2000"),
+            Masculino(nome: "Jonh", contaminado: false, dataNascimento: "20/10/2005"),
+            Masculino(nome: "Leo", contaminado: true, dataNascimento: "20/10/1980"),
+            Feminino(nome: "Manuela", contaminado: true, gravida: false, dataNascimento: "21/02/1950")
              ]
         return listaDePacientes
         }
@@ -43,7 +45,7 @@ class ImpressoraDeDados {
     func imprimir(paciente: Paciente){
            print("----------------------------------------------------------")
            print("Nome: \(paciente.nome)")
-           print("Idade: \(getIdade(dataNascimento: paciente.dataNascimento))")
+           print("Idade: \(getIdade(dataNascimento: paciente.dataNascimento)) anos")
            print("Sexo: \(type(of: paciente))") // Imprime o nome da classe
            print("Contaminado: \(paciente.contaminado == true ? "Sim" : "não")") //if ternario
            print("Tempo Vacina: \(paciente.calculaDataVacina())")
