@@ -9,16 +9,32 @@ import Foundation
 
 class ImpressoraDeDados {
     
+    func getIdade(dataNascimento: String) -> Int {
+          let nascimento = formatDate(dataNascimento)
+          let calendario = Calendar.current
+          guard let idade = calendario.dateComponents([.year], from: nascimento, to: Date()).year else {
+              return 1000 }
+          return idade
+
+      }
+
+      func formatDate(_ dataEntrada: String) -> Date {
+          let formatador = DateFormatter()
+          formatador.dateFormat = "dd/MM/yyyy"
+          formatador.locale = Locale(identifier: "en_US_POSIX")
+          guard let data = formatador.date(from: dataEntrada) else { return Date() }
+          return data
+
+      }
+    
     var listaDePacientes: [Paciente] = []
     
     func cadastrarPacientes() -> [Paciente]{
         listaDePacientes = [
-            Feminino(nome: "Larissa", idade: 21, contaminado: false, gravida: true),
-            Masculino(nome: "Renilson", idade: 2, contaminado: true),
-            Masculino(nome: "Marcosss", idade: 2, contaminado: false),
-            Masculino(nome: "Gustavo", idade: 22, contaminado: true),
-            Feminino(nome: "Maria", idade: 78, contaminado: true, gravida: true),
-            Feminino(nome: "Joana", idade: 44, contaminado: true, gravida: false)
+            Feminino(nome: "Maria", contaminado: true, gravida: true, dataNascimento: "31/12/1997"),
+            Feminino(nome: "Aline", contaminado: false, gravida: false, dataNascimento: "31/12/2000"),
+            Masculino(nome: "Renilson", dataNascimento: "31/12/2000", contaminado: true),
+            Masculino(nome: "Jonh", dataNascimento: "20/10/2005", contaminado: false)
              ]
         return listaDePacientes
         }

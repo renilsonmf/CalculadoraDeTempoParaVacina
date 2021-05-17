@@ -10,14 +10,14 @@ import UIKit
 class Feminino: Paciente{
 
     var gravida: Bool = false
+
     
-    init(nome: String, idade: Int, contaminado: Bool, gravida: Bool) {
-        
+    init(nome: String, contaminado: Bool, gravida: Bool, dataNascimento: String) {
         self.gravida = gravida
         
-        super.init(nome: nome, idade: idade, contaminado: contaminado, sexo: 2, dataDaVacina: CalculoVacinaFeminino())
-       
+        super.init(nome: nome, dataNascimento: dataNascimento, contaminado: contaminado, sexo: 1, dataDaVacina: CalculoVacinaFeminino())
     }
+
     override func imprimir() {
         super.imprimir()
         print("Gravida: \(gravida)")
