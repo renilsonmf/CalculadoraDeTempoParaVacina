@@ -12,9 +12,9 @@ class Paciente{
     var idade: Int
     var contaminado: Bool
     var sexo: Int
-    var dataDaVacina: DataDaVacina
+    var dataDaVacina: CalculoVacina
     
-    init(nome: String, idade: Int, contaminado: Bool, sexo: Int, dataDaVacina: DataDaVacina) {
+    init(nome: String, idade: Int, contaminado: Bool, sexo: Int, dataDaVacina: CalculoVacina) {
         self.nome = nome
         self.idade = idade
         self.contaminado = contaminado
@@ -30,5 +30,8 @@ class Paciente{
         let impressoraDeDados = ImpressoraDeDados()
         impressoraDeDados.imprimir(paciente: self)
     }
+    
+ 
+    
 }
 

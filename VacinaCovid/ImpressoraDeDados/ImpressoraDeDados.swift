@@ -18,18 +18,18 @@ class ImpressoraDeDados {
             Masculino(nome: "Marcosss", idade: 2, contaminado: false),
             Masculino(nome: "Gustavo", idade: 22, contaminado: true),
             Feminino(nome: "Maria", idade: 78, contaminado: true, gravida: true),
-            Feminino(nome: "Joana", idade: 44, contaminado: true, gravida: true)
+            Feminino(nome: "Joana", idade: 44, contaminado: true, gravida: false)
              ]
         return listaDePacientes
         }
     
     func imprimir(paciente: Paciente){
+           print("----------------------------------------------------------")
            print("Nome: \(paciente.nome)")
            print("Idade: \(paciente.idade)")
            print("Sexo: \(type(of: paciente))") // Imprime o nome da classe
-           print("Contaminado: \(paciente.contaminado)")
+           print("Contaminado: \(paciente.contaminado == true ? "Sim" : "não")") //if ternario
            print("Tempo Vacina: \(paciente.calculaDataVacina())")
-           print("----------------------------------------------------------")
         }
 
     }

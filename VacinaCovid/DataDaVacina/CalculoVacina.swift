@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CalculoVacinaMasculino: DataDaVacina {
+class CalculoVacina {
     func calculaDataDaVacina(paciente: Paciente) -> String {
         
         var tempoParaVacina: String = ""

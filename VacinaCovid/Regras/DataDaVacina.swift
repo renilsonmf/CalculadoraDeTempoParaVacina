@@ -7,8 +7,8 @@
 
 import Foundation
 
-protocol DataDaVacina {
-    
-    func calculaDataDaVacina(paciente: Paciente) -> String
-    
-}
+//protocol DataDaVacina {
+//
+//    func calculaDataDaVacina(paciente: Paciente) -> String
+//
+//}

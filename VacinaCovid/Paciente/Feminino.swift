@@ -19,8 +19,8 @@ class Feminino: Paciente{
        
     }
     override func imprimir() {
-        print("Gravida: \(gravida)")
         super.imprimir()
+        print("Gravida: \(gravida)")
     }
 
 }

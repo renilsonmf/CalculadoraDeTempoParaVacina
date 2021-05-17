@@ -10,6 +10,6 @@ import UIKit
 class Masculino: Paciente {
 
      init(nome: String, idade: Int, contaminado: Bool) {
-        super.init(nome: nome, idade: idade, contaminado: contaminado, sexo: 1, dataDaVacina: CalculoVacinaMasculino())
+        super.init(nome: nome, idade: idade, contaminado: contaminado, sexo: 1, dataDaVacina: CalculoVacina())
     }
     }

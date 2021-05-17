@@ -20,7 +20,7 @@
 		1C72E5F4264F3D4B009E73B4 /* DataDaVacina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */; };
 		1C72E5FA264F3E2C009E73B4 /* Feminino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5F9264F3E2C009E73B4 /* Feminino.swift */; };
 		1C72E602264F3E9A009E73B4 /* Masculino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E601264F3E9A009E73B4 /* Masculino.swift */; };
-		1C72E60F264F3F56009E73B4 /* CalculoVacinaMasculino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E60E264F3F56009E73B4 /* CalculoVacinaMasculino.swift */; };
+		1C72E60F264F3F56009E73B4 /* CalculoVacina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E60E264F3F56009E73B4 /* CalculoVacina.swift */; };
 		1C72E617264F5288009E73B4 /* CalculoVacinaFeminino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E616264F5288009E73B4 /* CalculoVacinaFeminino.swift */; };
 		1C72E61D264F58EF009E73B4 /* ImpressoraDeDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E61C264F58EF009E73B4 /* ImpressoraDeDados.swift */; };
 /* End PBXBuildFile section */
@@ -63,7 +63,7 @@
 		1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDaVacina.swift; sourceTree = "<group>"; };
 		1C72E5F9264F3E2C009E73B4 /* Feminino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feminino.swift; sourceTree = "<group>"; };
 		1C72E601264F3E9A009E73B4 /* Masculino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masculino.swift; sourceTree = "<group>"; };
-		1C72E60E264F3F56009E73B4 /* CalculoVacinaMasculino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoVacinaMasculino.swift; sourceTree = "<group>"; };
+		1C72E60E264F3F56009E73B4 /* CalculoVacina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoVacina.swift; sourceTree = "<group>"; };
 		1C72E616264F5288009E73B4 /* CalculoVacinaFeminino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoVacinaFeminino.swift; sourceTree = "<group>"; };
 		1C72E61C264F58EF009E73B4 /* ImpressoraDeDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressoraDeDados.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,7 +172,7 @@
 		1C72E5F8264F3DCF009E73B4 /* DataDaVacina */ = {
 			isa = PBXGroup;
 			children = (
-				1C72E60E264F3F56009E73B4 /* CalculoVacinaMasculino.swift */,
+				1C72E60E264F3F56009E73B4 /* CalculoVacina.swift */,
 				1C72E616264F5288009E73B4 /* CalculoVacinaFeminino.swift */,
 			);
 			path = DataDaVacina;
@@ -323,7 +323,7 @@
 				1C72E5B7264F3599009E73B4 /* ViewController.swift in Sources */,
 				1C72E5B3264F3599009E73B4 /* AppDelegate.swift in Sources */,
 				1C72E5B5264F3599009E73B4 /* SceneDelegate.swift in Sources */,
-				1C72E60F264F3F56009E73B4 /* CalculoVacinaMasculino.swift in Sources */,
+				1C72E60F264F3F56009E73B4 /* CalculoVacina.swift in Sources */,
 				1C72E602264F3E9A009E73B4 /* Masculino.swift in Sources */,
 				1C72E5FA264F3E2C009E73B4 /* Feminino.swift in Sources */,
 				1C72E5BD264F3599009E73B4 /* VacinaCovid.xcdatamodeld in Sources */,
